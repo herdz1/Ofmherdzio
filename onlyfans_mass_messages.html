@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OnlyFans Mass DMs</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fff;
+      padding: 20px;
+      line-height: 1.6;
+    }
+    .message {
+      background: #f9f9f9;
+      border: 1px solid #ddd;
+      padding: 12px;
+      border-radius: 10px;
+      margin-bottom: 15px;
+      position: relative;
+    }
+    .copy-btn {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      padding: 5px 10px;
+      font-size: 12px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .copy-btn:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>OnlyFans Mass DMs</h1>
+
+  <div id="messages"></div>
+
+  <script>
+    const messages = [
+      "wanna see what i’m doing rn?👀",
+      "what if i told u i’m not wearing anything?😳",
+      "omg i had the naughtiest dream about u last night😇",
+      "i have a lil secret… wanna know what it is?🙈",
+      "do u like good girls or the kinda bad ones?😉",
+      "guess what color my panties are rn😜",
+      "i’m bored... wanna play a game with me?🎲",
+      "wanna be my fav today? i’ll make it worth it💋",
+      "should i send u a surprise pic? just say yes😇",
+      "i need ur help choosing my outfit👗 or nothing?",
+      "would u let me sit on ur lap or ur face?🙊",
+      "i’m feeling cute af rn... should i prove it?📸",
+      "my hands are bored... wanna fix that?😈",
+      "can u keep a secret? i wanna tell u something💭",
+      "i just took a steamy shower… still dripping🥺",
+      "i feel like being a lil bad rn... should i?😈",
+      "what would u do if i was in ur bed rn?😴",
+      "truth or dare?👅 i dare u to message me",
+      "my lips miss being kissed… wanna help?💄",
+      "do u want me to be innocent or naughty today?😉",
+      "can i be ur good girl today? or bad girl?😇",
+      "my camera’s on… u wanna see what i’m doing?📷",
+      "omg... i just found an old naughty video of me🙊",
+      "i think about u way too much... it’s kinda dangerous😩",
+      "be honest… do i make u hard just by texting?🫣",
+      "i bet i can make u blush with just one pic🥵",
+      "i made a spicy video just for u… wanna see?🔥",
+      "i’m curious… what’s ur biggest fantasy?👀",
+      "wanna see the view from my bed rn?👁️",
+      "what if i told u i’m touching myself thinking of u?😳",
+      "i just put on something really tiny… wanna peek?🍑",
+      "do u like it slow… or rough?👅",
+      "ugh i’m so needy rn… save me?😩",
+      "should i behave or misbehave tonight?😈",
+      "if u had me for one night… what would u do?🙊",
+      "why are u still not in my DMs?👀",
+      "would u rate my new lingerie? need a man’s opinion😇",
+      "every message from u makes me bite my lip💋",
+      "ok but… can i sit on ur lap while we talk?🙈",
+      "my bed feels cold… can u fix that?😩",
+      "u wouldn’t last 5 mins with me… prove me wrong😏",
+      "tell me how u like it… i’m taking notes📓",
+      "i’ve been such a good girl… don’t u think i deserve a reward?🥺",
+      "just took a selfie... should i send it or is it too spicy?🔥",
+      "playtime or bedtime? u choose😈",
+      "ngl… i’ve been waiting for ur message all day😳",
+      "tell me ur fav position… i’ll tell u mine🫣",
+      "i want u to ruin my innocence… slowly👅",
+      "my hands are cold… can i warm them on u?🥶",
+      "promise not to judge? i’ve got something to confess💌",
+      "i look so cute rn… u have no idea🥺",
+      "do u like girls who tease or please?😇",
+      "this outfit needs ur approval… or maybe none at all👀",
+      "omg why am i blushing just thinking of u🙈",
+      "if i was on ur lap rn… what would happen next?😳",
+      "i wanna hear ur voice… tell me something dirty🫢",
+      "i woke up with u on my mind… again😩",
+      "dare me to do something wild rn?😈",
+      "i’m home alone… and kinda restless👀",
+      "what would u do if i whispered in ur ear right now?😇",
+      "today’s vibe: innocent face, dirty thoughts😏",
+      "let’s pretend we’re on our first date... what happens next?💘"
+    ];
+
+    const container = document.getElementById("messages");
+
+    messages.forEach((msg, index) => {
+      const div = document.createElement("div");
+      div.className = "message";
+
+      const p = document.createElement("p");
+      p.textContent = msg;
+
+      const button = document.createElement("button");
+      button.className = "copy-btn";
+      button.textContent = "Copy";
+      button.onclick = () => {
+        navigator.clipboard.writeText(msg);
+        button.textContent = "Copied!";
+        setTimeout(() => button.textContent = "Copy", 1500);
+      };
+
+      div.appendChild(p);
+      div.appendChild(button);
+      container.appendChild(div);
+    });
+  </script>
+
+</body>
+</html>

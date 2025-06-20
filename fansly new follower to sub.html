@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>OnlyFans Welcome Script</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; background: #fefefe; color: #222; }
+    .message-container { margin-bottom: 15px; position: relative; }
+    .message { display: inline-block; padding: 10px; border: 1px solid #ddd; border-radius: 10px; background: #f9f9f9; max-width: 80%; }
+    button { margin-left: 10px; font-size: 12px; padding: 5px 10px; cursor: pointer; background-color: #eaeaea; border: none; border-radius: 5px; }
+    button:hover { background-color: #dcdcdc; }
+  </style>
+</head>
+<body>
+
+  <div class="message-container"><span class="message" id="msg1">Heyyy 🥹 thanks for the follow babe!!</span><button onclick="copyText('msg1')">Copy</button></div>
+  <div class="message-container"><span class="message" id="msg2">I’m super curious… what made you click on me? 😳</span><button onclick="copyText('msg2')">Copy</button></div>
+  <div class="message-container"><span class="message" id="msg3">Sooo tell me… what’s your name? 😋</span><button onclick="copyText('msg3')">Copy</button></div>
+  <div class="message-container"><span class="message" id="msg4">Where are you from? I love accents hehe</span><button onclick="copyText('msg4')">Copy</button></div>
+  <div class="message-container"><span class="message" id="msg5">And how old are you btw? 👀</span><button onclick="copyText('msg5')">Copy</button></div>
+  <div class="message-container"><span class="message" id="msg6">Are you working or studying or… just being hot? 😏</span><button onclick="copyText('msg6')">Copy</button></div>
+  <div class="message-container"><span class="message" id="msg7">What kinda girls are you into? Be honest 🙈</span><button onclick="copyText('msg7')">Copy</button></div>
+  <div class="message-container"><span class="message" id="msg8">Wait wait… do you like shy girls or the naughty type? 😳</span><button onclick="copyText('msg8')">Copy</button></div>
+  <div class="message-container"><span class="message" id="msg9">What would you do if I was sitting on your lap right now? 😇</span><button onclick="copyText('msg9')">Copy</button></div>
+  <div class="message-container"><span class="message" id="msg10">Omg you’re turning me red 🥺 wanna see a pic I just took for you?</span><button onclick="copyText('msg10')">Copy</button></div>
+  <div class="message-container"><span class="message" id="msg11">I’ll send it right now… but it’s locked for subs only 😝</span><button onclick="copyText('msg11')">Copy</button></div>
+  <div class="message-container"><span class="message" id="msg12">It’s a little too spicy for free hehe 😇</span><button onclick="copyText('msg12')">Copy</button></div>
+  <div class="message-container"><span class="message" id="msg13">You wanna unlock it for me, baby? 💖</span><button onclick="copyText('msg13')">Copy</button></div>
+
+  <script>
+    function copyText(id) {
+      const text = document.getElementById(id).innerText;
+      navigator.clipboard.writeText(text).then(() => {
+        alert('Copied!');
+      });
+    }
+  </script>
+
+</body>
+</html>
